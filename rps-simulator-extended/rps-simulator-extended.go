@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 // rps-simulator-extended.go --- Rock-Paper-Scissors Simulator (extended)
@@ -33,6 +34,8 @@ func main() {
 	p1, p2 := &Player{}, &Player{}
 	total := 1000000
 	draws, wins, loses := 0, 0, 0
+
+	rand.Seed(time.Now().UnixNano())
 
 	for i := 0; i < total; i++ {
 		hand1, hand2 := p1.RandomHand(), p2.RandomHandExtended()
