@@ -54,6 +54,6 @@ func main() {
 	fmt.Printf("勝利=%d回\n", wins)
 	fmt.Printf("引分=%d回\n", draws)
 	fmt.Printf("敗北=%d回\n", loses)
-	fmt.Printf("------------------------")
+	fmt.Printf("------------------------\n")
 	fmt.Printf("合計=%d回\n", total)
 }
